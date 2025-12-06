@@ -81,8 +81,80 @@
       </div>
 
 
-      <div class="row ftco-animate"  id="tour-list">
-        
+      <div class="row">
+        <div class="col-md-4 ftco-animate">
+          <div class="project-wrap">
+            <a href="#" class="img" style="background-image: url(images/Halfday-Ubud-Morning-Tour.jpg)">
+              <span class="price">IDR 650K / person</span>
+            </a>
+            <div class="text p-4">
+              <span class="days">Halfday Tour</span>
+              <h3><a href="#">Halfday Ubud Morning Tour</a></h3>
+              <p class="location"><span class="fa fa-map-marker"></span> Ubud, Bali</p>
+              <ul>
+                <li><span class="flaticon-route"></span> 6 Hours</li>
+                <li><span class="flaticon-tour-guide"></span> Private Guide</li>
+                <li><span class="flaticon-map"></span> Multiple Destinations</li>
+              </ul>
+              <div class="mt-3 d-flex justify-content-between">
+                <a href="https://wa.me/6281337204005?text=Hallo%20Angel%20Tours%20%26%20Travel,%20saya%20ingin%20booking%20Halfday%20Ubud%20Morning%20Tour."
+                  class="btn btn-primary">Booking Now</a>
+
+                <a href="detail-tours-travel.html" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 ftco-animate">
+          <div class="project-wrap">
+            <a href="#" class="img" style="background-image: url(images/full-day-tour.jpg)">
+              <span class="price">IDR 850K / person</span>
+            </a>
+            <div class="text p-4">
+              <span class="days">Full Day Tour</span>
+              <h3><a href="#">Full Day Ubud Tour</a></h3>
+              <p class="location"><span class="fa fa-map-marker"></span> Ubud, Bali</p>
+              <ul>
+                <li><span class="flaticon-map"></span> 8–9 Hours</li>
+                <li><span class="flaticon-route"></span> Cultural Destinations</li>
+                <li><span class="flaticon-tour-guide"></span> Experienced Driver</li>
+              </ul>
+              <div class="mt-3 d-flex justify-content-between">
+                <a href="https://wa.me/6281337204005?text=Hallo%20Angel%20Tours%20%26%20Travel,%20saya%20ingin%20booking%20Full%20Day%20Ubud%20Tour."
+                  class="btn btn-primary">Booking Now</a>
+
+                <a href="detail-tours-travel.html" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 ftco-animate">
+          <div class="project-wrap">
+            <a href="#" class="img" style="background-image: url(images/Ubud-ATV-Rafting.jpg);">
+              <span class="price">IDR 1.200K / person</span>
+            </a>
+            <div class="text p-4">
+              <span class="days">Adventure Package</span>
+              <h3><a href="#">Ubud ATV & Rafting</a></h3>
+              <p class="location"><span class="fa fa-map-marker"></span> Ubud, Bali</p>
+              <ul>
+                <li><span class="flaticon-paragliding"></span> ATV Ride</li>
+                <li><span class="flaticon-shower"></span> Rafting 2.5 Hours</li>
+                <li><span class="flaticon-route"></span> Transport Included</li>
+              </ul>
+              <div class="mt-3 d-flex justify-content-between">
+                <a href="https://wa.me/6281337204005?text=Hallo%20Angel%20Tours%20%26%20Travel,%20saya%20ingin%20booking%20Paket%20Ubud%20ATV%20%26%20Rafting."
+                  class="btn btn-primary">Booking Now</a>
+
+                <a href="detail-tours-travel.html" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
 
 
@@ -199,50 +271,6 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/paket/paket-2025.js"></script>
-
-
-
-  <script>
-  const container = document.getElementById("tour-list");
-
-  tours.forEach(tour => {
-    const html = `
-      <div class="col-md-4   mb-4">
-        <div class="project-wrap">
-          <a class="img" style="background-image: url('${tour.cover}')">
-            <span class="price">IDR ${tour.price_per_person.toLocaleString()} / person</span>
-          </a>
-
-          <div class="text p-4">
-            <span class="days">${tour.duration || "Tour Package"}</span>
-
-            <h3><a href="detail/${tour.slug}.html">${tour.title}</a></h3>
-
-            <p class="location">
-            
-            </p>
-
-            <ul>
-              <li><span class="flaticon-route"></span> ${tour.duration}</li>
-              <li><span class="flaticon-tour-guide"></span> Private Guide</li>
-              <li><span class="flaticon-map"></span> Multiple Destinations</li>
-            </ul>
-
-            <div class="mt-3 d-flex justify-content-between">
-              <a href="https://wa.me/6281337204005?text=Hallo%20Angel%20Tours%20%26%20Travel,%20saya%20ingin%20booking%20${encodeURIComponent(tour.title)}."
-                class="btn btn-primary">Booking Now</a>
-
-              <a href="detail-tours-travel.html?id=${tour.slug}" class="btn btn-primary">Details</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
-
-    container.innerHTML += html;
-  });
-</script>
 
 </body>
 
