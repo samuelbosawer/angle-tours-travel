@@ -1,0 +1,152 @@
+const tours = [
+  {
+    "title": "Gili Snorkeling Tour Package",
+    "slug": "gili-snorkeling-tour",
+    "price_per_person": 2500000,
+    "description": "Snorkeling experience in Gili Islands with hotel and fast boat return.",
+    "included": [
+      "Return fast boat",
+      "Hotel room",
+      "Snorkeling boat",
+      "Snorkeling equipment",
+      "Lunch",
+      "Cycling around Gili Trawangan"
+    ],
+    "cover": "images/cover/gili-snorkeling-tour.png",
+    "detail_img": "images/cover-detail/cover-detail-gili-snorkeling-tour.png",
+    "images": [
+      "images/Halfday-Ubud-Morning-Tour.jpg",
+      "images/Halfday-Ubud-Morning-Tour.jpg",
+      "images/Halfday-Ubud-Morning-Tour.jpg"
+    ]
+  },
+
+  {
+    "title": "Uluwatu Sunset + Kecak Dance + Jimbaran Seafood Dinner",
+    "slug": "uluwatu-sunset-kecak-dinner",
+    "price_per_person": 1250000,
+    "duration": "6–7 hours",
+    "start_time": "02:30 PM",
+    "included": [
+      "Air-conditioned car",
+      "Uluwatu Temple ticket",
+      "Kecak dance ticket",
+      "Seafood dinner at Jimbaran"
+    ],
+    "cover": "images/cover/uluwatu-sunset-kecak-dinner.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "images": [
+      "images/Halfday-Ubud-Morning-Tour.jpg",
+      "images/Halfday-Ubud-Morning-Tour.jpg",
+      "images/Halfday-Ubud-Morning-Tour.jpg"
+    ]
+  },
+
+  {
+    "title": "Blue Lagoon Snorkeling & East Bali Tour",
+    "slug": "blue-lagoon-east-bali-tour",
+    "price_per_person": 1250000,
+    "duration": "10 hours",
+    "itinerary": [
+      "Heaven Gate Lempuyang Temple",
+      "Tirta Gangga King Water Palace",
+      "Blue Lagoon Snorkeling + Lunch"
+    ],
+    "start_time": "05:00 AM",
+    "included": [
+      "Air-conditioned car",
+      "Experienced English-speaking driver guide",
+      "Entrance tickets",
+      "Lunch",
+      "Snorkeling equipment",
+      "Snorkeling boat"
+    ],
+    "cover": "images/cover/blue-lagoon-east-bali-tour.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "images": [
+      "images/Halfday-Ubud-Morning-Tour.jpg",
+      "images/Halfday-Ubud-Morning-Tour.jpg",
+      "images/Halfday-Ubud-Morning-Tour.jpg"
+    ]
+  },
+
+  {
+    "title": "East Bali Tour",
+    "slug": "east-bali-tour",
+    "price_per_person": 1000000,
+    "duration": "10 hours",
+    "itinerary": [
+      "Goa Lawah Temple",
+      "Tenganan Traditional Village",
+      "Tirta Gangga",
+      "Lempuyang Temple"
+    ],
+    "start_time": "08:00 AM",
+    "included": [
+      "Air-conditioned car",
+      "Experienced driver + guide",
+      "Entrance tickets",
+      "Lunch"
+    ],
+    "cover": "images/cover/east-bali-tour.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "images": [
+      "images/Halfday-Ubud-Morning-Tour.jpg",
+      "images/Halfday-Ubud-Morning-Tour.jpg",
+      "images/Halfday-Ubud-Morning-Tour.jpg"
+    ]
+  },
+  {
+    "title": "East Bali + Besakih Mother Temple + Blue Lagoon Snorkeling",
+    "slug": "east-bali-besakih-blue-lagoon",
+    "price_per_person": 1100000,
+    "duration": "9 hours",
+    "itinerary": [
+      "2-hour snorkeling",
+      "Lunch",
+      "Goa Gajah Temple",
+      "Besakih Mother Temple"
+    ],
+    "start_time": "08:00 AM",
+    "included": [
+      "Air-conditioned car",
+      "Driver + guide",
+      "Entrance tickets",
+      "Snorkeling equipment",
+      "Snorkeling boat",
+      "Lunch"
+    ],
+    "cover": "images/cover/east-bali-besakih-blue-lagoon.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "images": [
+      "images/Halfday-Ubud-Morning-Tour.jpg",
+      "images/Halfday-Ubud-Morning-Tour.jpg",
+      "images/Halfday-Ubud-Morning-Tour.jpg"
+    ]
+  },
+  {
+    "title": "Rafting & ATV Ubud",
+    "slug": "rafting-atv-ubud",
+    "price_per_person": 1300000,
+    "duration": "Rafting 2.5 hours, ATV 1.5 hours",
+    "start_time": "08:30 AM",
+    "included": [
+      "Air-conditioned car",
+      "Rafting equipment",
+      "ATV equipment",
+      "Lunch",
+      "Dinner",
+      "Insurance"
+    ],
+    "cover": "images/cover/rafting-atv-ubud.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "images": [
+      "images/Halfday-Ubud-Morning-Tour.jpg",
+      "images/Halfday-Ubud-Morning-Tour.jpg",
+      "images/Halfday-Ubud-Morning-Tour.jpg"
+    ]
+  }
+
+  
+  
+]
