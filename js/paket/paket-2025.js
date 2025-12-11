@@ -12,14 +12,36 @@ const tours = [
       "Lunch",
       "Cycling around Gili Trawangan"
     ],
-    "cover": "images/Halfday-Ubud-Morning-Tour.jpg",
-    "detail-img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/gili-snorkeling-tour.png",
+    "detail_img": "images/cover-detail/cover-detail-gili-snorkeling-tour.png",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg"
     ]
   },
+
+  {
+    "title": "Uluwatu Sunset + Kecak Dance + Jimbaran Seafood Dinner",
+    "slug": "uluwatu-sunset-kecak-dinner",
+    "price_per_person": 1250000,
+    "duration": "6–7 hours",
+    "start_time": "02:30 PM",
+    "included": [
+      "Air-conditioned car",
+      "Uluwatu Temple ticket",
+      "Kecak dance ticket",
+      "Seafood dinner at Jimbaran"
+    ],
+    "cover": "images/cover/uluwatu-sunset-kecak-dinner.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "images": [
+      "images/Halfday-Ubud-Morning-Tour.jpg",
+      "images/Halfday-Ubud-Morning-Tour.jpg",
+      "images/Halfday-Ubud-Morning-Tour.jpg"
+    ]
+  },
+
   {
     "title": "Blue Lagoon Snorkeling & East Bali Tour",
     "slug": "blue-lagoon-east-bali-tour",
@@ -39,8 +61,8 @@ const tours = [
       "Snorkeling equipment",
       "Snorkeling boat"
     ],
-    "cover": "images/Halfday-Ubud-Morning-Tour.jpg",
-    "detail-img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/blue-lagoon-east-bali-tour.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -65,8 +87,8 @@ const tours = [
       "Entrance tickets",
       "Lunch"
     ],
-    "cover": "images/Halfday-Ubud-Morning-Tour.jpg",
-    "detail-img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/east-bali-tour.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -93,8 +115,8 @@ const tours = [
       "Snorkeling boat",
       "Lunch"
     ],
-    "cover": "images/Halfday-Ubud-Morning-Tour.jpg",
-    "detail-img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/east-bali-besakih-blue-lagoon.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -115,8 +137,8 @@ const tours = [
       "Dinner",
       "Insurance"
     ],
-    "cover": "images/Halfday-Ubud-Morning-Tour.jpg",
-    "detail-img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/rafting-atv-ubud.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -143,8 +165,8 @@ const tours = [
       "Entrance tickets",
       "Lunch"
     ],
-    "cover": "images/Halfday-Ubud-Morning-Tour.jpg",
-    "detail-img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/ubud-tour.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -169,8 +191,8 @@ const tours = [
       "Kintamani Volcano View",
       "Tegalalang Rice Terrace"
     ],
-    "cover": "images/Halfday-Ubud-Morning-Tour.jpg",
-    "detail-img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/ubud-kintamani-tour.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -197,8 +219,8 @@ const tours = [
       "Kintamani Volcano View",
       "Besakih Mother Temple"
     ],
-    "cover": "images/Halfday-Ubud-Morning-Tour.jpg",
-    "detail-img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/kintamani-besakih-tour.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -225,8 +247,8 @@ const tours = [
       "Chocolate Factory",
       "Taman Ayun Temple"
     ],
-    "cover": "images/Halfday-Ubud-Morning-Tour.jpg",
-    "detail-img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/west-north-bali-tour.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -253,8 +275,8 @@ const tours = [
       "Lunch at Lovina Beach",
       "Gitgit Waterfall"
     ],
-    "cover": "images/Halfday-Ubud-Morning-Tour.jpg",
-    "detail-img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/north-bali-tour.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -273,8 +295,8 @@ const tours = [
       "Fishing equipment",
       "Lunch"
     ],
-    "cover": "images/Halfday-Ubud-Morning-Tour.jpg",
-    "detail-img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/trolling-fishing.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -293,32 +315,13 @@ const tours = [
       "GWK & Uluwatu tickets",
       "Seafood dinner"
     ],
-    "cover": "images/Halfday-Ubud-Morning-Tour.jpg",
-    "detail-img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
-    "images": [
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg"
-    ]
-  },
-  {
-    "title": "Uluwatu Sunset + Kecak Dance + Jimbaran Seafood Dinner",
-    "slug": "uluwatu-sunset-kecak-dinner",
-    "price_per_person": 1250000,
-    "duration": "6–7 hours",
-    "start_time": "02:30 PM",
-    "included": [
-      "Air-conditioned car",
-      "Uluwatu Temple ticket",
-      "Kecak dance ticket",
-      "Seafood dinner at Jimbaran"
-    ],
-    "cover": "images/Halfday-Ubud-Morning-Tour.jpg",
-    "detail-img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/south-bali-tour.png",
+    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg"
     ]
   }
+  
 ]

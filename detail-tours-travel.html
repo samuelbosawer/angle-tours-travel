@@ -25,37 +25,37 @@
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-white ftco-navbar-light" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand d-flex align-items-center text-primary" href="index.html" style="gap: 10px;">
-				<img src="images/logo/logo.png" width="50" class="img-fluid" alt="Logo">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-white ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center text-primary" href="index.html" style="gap: 10px;">
+        <img src="images/logo/logo.png" width="50" class="img-fluid" alt="Logo">
 
-				<div class="brand-text" style="line-height: 1;">
-					<strong>Angel</strong><br>
-					<span style="font-size: 14px; color: #333;">Tours & Travel Specialist</span>
-				</div>
-			</a>
-			<button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu text-primary ">Menu</span>
-			</button>
+        <div class="brand-text" style="line-height: 1;">
+          <strong>Angel</strong><br>
+          <span style="font-size: 14px; color: #333;">Tours & Travel Specialist</span>
+        </div>
+      </a>
+      <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu text-primary ">Menu</span>
+      </button>
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item "><a href="index.html" class="nav-link ">Home</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link ">About</a></li>
-					<li class="nav-item active"><a href="destination.html" class="nav-link ">Destination</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link ">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- END nav -->
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item "><a href="index.html" class="nav-link ">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link ">About</a></li>
+          <li class="nav-item active"><a href="destination.html" class="nav-link ">Destination</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link ">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
 
   <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_1.jpg');">
     <div class="overlay"></div>
@@ -73,23 +73,12 @@
 
   <section class="ftco-section ftco-no-pt ftco-no-pb">
 
-    <div class="container">
-      <div class="row justify-content-center pb-4 mt-5">
-        <div class="col-md-12 heading-section text-center ftco-animate">
-          <h2 class="text-primary font-weight-bold">Halfday Ubud Morning Tour</h2>
-          <!-- <h4 class="mb-4 ">Every Destination You Can Explore with Angel Tours & Travel</h4> -->
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 ftco-animate  " id="detail-container">
-
-        
+    <div class="container ftco-animate" id="detail-container">
 
 
 
-        </div> <!-- .col-md-8 -->
 
-      </div>
+
     </div>
   </section> <!-- .section -->
 
@@ -201,47 +190,62 @@
 
 
   <script>
-  // Ambil slug dari URL
-  const params = new URLSearchParams(window.location.search);
-  const slug = params.get("id");
+    // Ambil slug dari URL
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get("id");
 
-  // Pastikan slug ada
-  if (!slug) {
-    document.getElementById("detail-container").innerHTML = "<h3>Package not found.</h3>";
-    throw new Error("Slug not found");
-  }
+    // Pastikan slug ada
+    if (!slug) {
+      document.getElementById("detail-container").innerHTML = "<h3>Package not found.</h3>";
+      throw new Error("Slug not found");
+    }
 
-  // Cari data paket berdasarkan slug
-  const tour = tours.find(item => item.slug === slug);
+    // Cari data paket berdasarkan slug
+    const tour = tours.find(item => item.slug === slug);
 
-  if (!tour) {
-    document.getElementById("detail-container").innerHTML = "<h3>Package not found.</h3>";
-    throw new Error("Tour data missing");
-  }
+    if (!tour) {
+      document.getElementById("detail-container").innerHTML = "<h3>Package not found.</h3>";
+      throw new Error("Tour data missing");
+    }
 
-  // Format harga
-  const price = `IDR ${tour.price_per_person.toLocaleString()} / person`;
+    // Format harga
+    const price = `IDR ${tour.price_per_person.toLocaleString()} / person`;
 
-  // Buat list Included
-  const includedList = tour.included
-    ? tour.included.map(i => `<li>${i}</li>`).join("")
-    : "<li>Data not available</li>";
+    // Buat list Included
+    const includedList = tour.included
+      ? tour.included.map(i => `<li>${i}</li>`).join("")
+      : "<li>Data not available</li>";
 
-  // Buat list Destination / Itinerary
-  const destinationList = tour.itinerary
-    ? tour.itinerary.map(i => `<li>${i}</li>`).join("")
-    : "<li>Data not available</li>";
+    // Buat list Destination / Itinerary
+    const destinationList = tour.itinerary
+      ? tour.itinerary.map(i => `<li>${i}</li>`).join("")
+      : "<li>Data not available</li>";
 
-  // Gambar utama
-  const mainImage = tour.cover ?? "images/logo/logo.png";
+    // Gambar utama
+    const mainImage = tour.detail_img ?? "images/logo/logo.png";
 
-  // Gambar detail
-  const detailImages = tour.images
-    ? tour.images.map(img => `<img src="${img}" class="img-fluid rounded border m-1" width="200">`).join("")
-    : "Coming soon";
+    // Gambar detail
+    const detailImages = tour.images
+      ? tour.images.map(img => `<img src="${img}" class="img-fluid rounded border m-1" width="200">`).join("")
+      : "Coming soon";
 
-  // Tampilkan ke halaman
-  document.getElementById("detail-container").innerHTML = `
+    // Tampilkan ke halaman
+    document.getElementById("detail-container").innerHTML = `
+
+ <div class="row justify-content-center pb-4 mt-5">
+        <div class="col-md-12 heading-section text-center ">
+          <h2 class="text-primary font-weight-bold">${tour.title}</h2>
+          <!-- <h4 class="mb-4 ">Every Destination You Can Explore with Angel Tours & Travel</h4> -->
+        </div>
+      </div>
+  <div class="row">
+        <div class="col-lg-12   " id="">
+
+        
+
+
+
+      
     <p>
       <img src="${mainImage}" alt="${tour.title}" class="img-fluid border rounded shadow">
     </p>
@@ -302,8 +306,12 @@
    Booking Now
 </a>
     </div>
+
+    </div> <!-- .col-md-8 -->
+
+      </div>
   `;
-</script>
+  </script>
 
 </body>
 
