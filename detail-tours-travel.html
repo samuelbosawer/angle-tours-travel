@@ -196,7 +196,23 @@
 
     // Pastikan slug ada
     if (!slug) {
-      document.getElementById("detail-container").innerHTML = "<h3>Package not found.</h3>";
+      document.getElementById("detail-container").innerHTML = `
+
+      <div class="row justify-content-center pb-4 mt-5">
+        <div class="col-md-12 heading-section text-center ">
+          <h2 class="text-primary font-weight-bold">Package Not Found</h2>
+        <h4 class="mb-4 ">Every Destination You Can Explore with Angel Tours & Travel</h4>
+        </div>
+      </div>
+  <div class="row">
+        <div class="col-lg-12 text-center mb-5  " id="">
+
+					<a href="destination.html" class="btn btn-primary rounded-pill p-3"> More Destinations</a>
+
+          <div>
+      
+      
+      `;
       throw new Error("Slug not found");
     }
 
@@ -204,51 +220,97 @@
     const tour = tours.find(item => item.slug === slug);
 
     if (!tour) {
-      document.getElementById("detail-container").innerHTML = "<h3>Package not found.</h3>";
-      throw new Error("Tour data missing");
-    }
+      document.getElementById("detail-container").innerHTML = `
 
-    // Format harga
-    const price = `IDR ${tour.price_per_person.toLocaleString()} / person`;
-
-    // Buat list Included
-    const includedList = tour.included
-      ? tour.included.map(i => `<li>${i}</li>`).join("")
-      : "<li>Data not available</li>";
-
-    // Buat list Destination / Itinerary
-    const destinationList = tour.itinerary
-      ? tour.itinerary.map(i => `<li>${i}</li>`).join("")
-      : "<li>Data not available</li>";
-
-    // Gambar utama
-    const mainImage = tour.detail_img ?? "images/logo/logo.png";
-
-    // Gambar detail
-    const detailImages = tour.images
-      ? tour.images.map(img => `<img src="${img}" class="img-fluid rounded border m-1" width="200">`).join("")
-      : "Coming soon";
-
-    // Tampilkan ke halaman
-    document.getElementById("detail-container").innerHTML = `
-
- <div class="row justify-content-center pb-4 mt-5">
+      <div class="row justify-content-center pb-4 mt-5">
         <div class="col-md-12 heading-section text-center ">
-          <h2 class="text-primary font-weight-bold">${tour.title}</h2>
-          <!-- <h4 class="mb-4 ">Every Destination You Can Explore with Angel Tours & Travel</h4> -->
+          <h2 class="text-primary font-weight-bold">Package Not Found</h2>
+        <h4 class="mb-4 ">Every Destination You Can Explore with Angel Tours & Travel</h4> 
         </div>
       </div>
   <div class="row">
-        <div class="col-lg-12   " id="">
+        <div class="col-lg-12 text-center mb-5  " id="">
 
-        
+					<a href="destination.html" class="btn btn-primary rounded-pill p-3"> More Destinations</a>
 
-
-
+          <div>
       
-    <p>
-      <img src="${mainImage}" alt="${tour.title}" class="img-fluid border rounded shadow">
-    </p>
+      
+      `;
+      throw new Error("Tour data missing");
+    }
+
+    // ================= HELPER =================
+const renderRow = (label, content) => {
+  if (
+    content === null ||
+    content === undefined ||
+    content === "" ||
+    content === "Not specified" ||
+    content === "Coming soon"
+  ) {
+    return "";
+  }
+
+  return `
+    <tr>
+      <th><strong>${label}</strong></th>
+      <td>${content}</td>
+    </tr>
+  `;
+};
+
+// ================= DATA PROCESSING =================
+
+// Format harga
+const price = tour.price_per_person
+  ? `IDR ${tour.price_per_person.toLocaleString()} / person`
+  : "";
+
+// Included list
+const includedList = tour.included?.length
+  ? `<ul class="mb-0">
+      ${tour.included.map(i => `<li>${i}</li>`).join("")}
+     </ul>`
+  : "";
+
+// Destination / Itinerary list
+const destinationList = tour.itinerary?.length
+  ? `<ul class="mb-0">
+      ${tour.itinerary.map(i => `<li>${i}</li>`).join("")}
+     </ul>`
+  : "";
+
+// Main image
+const mainImage = tour.detail_img || "";
+
+// Detail images
+const detailImages = tour.images?.length
+  ? tour.images
+      .map(
+        img =>
+          `<img src="${img}" class="img-fluid rounded border m-1" width="200">`
+      )
+      .join("")
+  : "";
+
+// ================= RENDER HTML =================
+document.getElementById("detail-container").innerHTML = `
+
+<div class="row justify-content-center pb-4 mt-5">
+  <div class="col-md-12 heading-section text-center">
+    <h2 class="text-primary font-weight-bold">${tour.title ?? ""}</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12">
+
+    ${mainImage ? `
+      <p>
+        <img src="${mainImage}" alt="${tour.title}" class="img-fluid border rounded shadow">
+      </p>
+    ` : ""}
 
     <table class="table table-bordered">
       <thead class="thead-light">
@@ -257,60 +319,31 @@
           <th>Details</th>
         </tr>
       </thead>
+
       <tbody>
-
-        <tr>
-          <th><strong>Package Name</strong></th>
-          <td>${tour.title}</td>
-        </tr>
-
-        <tr>
-          <th><strong>Price</strong></th>
-          <td>${price}</td>
-        </tr>
-
-        <tr>
-          <th><strong>Duration</strong></th>
-          <td>${tour.duration ?? "Not specified"}</td>
-        </tr>
-
-        <tr>
-          <th><strong>Tour Destinations</strong></th>
-          <td>
-            <ul class="mb-0">
-              ${destinationList}
-            </ul>
-          </td>
-        </tr>
-
-        <tr>
-          <th><strong>Facilities (Included)</strong></th>
-          <td>
-            <ul class="mb-0">
-              ${includedList}
-            </ul>
-          </td>
-        </tr>
-
-        <tr>
-          <th><strong>Supporting Photos</strong></th>
-          <td>${detailImages}</td>
-        </tr>
-
+        ${renderRow("Package Name", tour.title)}
+        ${renderRow("Price", price)}
+        ${renderRow("Duration", tour.duration)}
+        ${renderRow("Tour Destinations", destinationList)}
+        ${renderRow("Facilities (Included)", includedList)}
+        ${renderRow("Supporting Photos", detailImages)}
       </tbody>
     </table>
 
-    <div class="mt-5 mb-5 text-center ">
-    <a href="https://wa.me/6281337204005?text=Hello%20Angel%20Tours%20%26%20Travel,%20I%20would%20like%20to%20book%20the%20${encodeURIComponent(tour.title)}%20package."
-   class="btn btn-primary btn-lg">
-   Booking Now
-</a>
+    <div class="mt-5 mb-5 text-center">
+      <a href="https://wa.me/6281337204005?text=Hello%20Angel%20Tours%20%26%20Travel,%20I%20would%20like%20to%20book%20the%20${encodeURIComponent(
+        tour.title ?? ""
+      )}%20package."
+        class="btn btn-primary btn-lg">
+        Booking Now
+      </a>
     </div>
 
-    </div> <!-- .col-md-8 -->
+  </div>
+</div>
+`;
 
-      </div>
-  `;
+    
   </script>
 
 </body>

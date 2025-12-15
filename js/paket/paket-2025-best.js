@@ -12,8 +12,8 @@ const tours = [
       "Lunch",
       "Cycling around Gili Trawangan"
     ],
-    "cover": "images/cover/gili-snorkeling-tour.png",
-    "detail_img": "images/cover-detail/cover-detail-gili-snorkeling-tour.png",
+    "cover": "images/cover/gili-snorkeling-tour.jpg",
+    "detail_img": "images/cover-detail/cover-detail-gili-snorkeling-tour.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -33,7 +33,7 @@ const tours = [
       "Kecak dance ticket",
       "Seafood dinner at Jimbaran"
     ],
-    "cover": "images/cover/uluwatu-sunset-kecak-dinner.png",
+    "cover": "images/cover/uluwatu-sunset-kecak-dinner.jpg",
     "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -61,7 +61,7 @@ const tours = [
       "Snorkeling equipment",
       "Snorkeling boat"
     ],
-    "cover": "images/cover/blue-lagoon-east-bali-tour.png",
+    "cover": "images/cover/blue-lagoon-east-bali-tour.jpg",
     "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -88,7 +88,7 @@ const tours = [
       "Entrance tickets",
       "Lunch"
     ],
-    "cover": "images/cover/east-bali-tour.png",
+    "cover": "images/cover/east-bali-tour.jpg",
     "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -116,7 +116,7 @@ const tours = [
       "Snorkeling boat",
       "Lunch"
     ],
-    "cover": "images/cover/east-bali-besakih-blue-lagoon.png",
+    "cover": "images/cover/east-bali-besakih-blue-lagoon.jpg",
     "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",
@@ -138,7 +138,7 @@ const tours = [
       "Dinner",
       "Insurance"
     ],
-    "cover": "images/cover/rafting-atv-ubud.png",
+    "cover": "images/cover/rafting-atv-ubud.jpg",
     "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
     "images": [
       "images/Halfday-Ubud-Morning-Tour.jpg",

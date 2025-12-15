@@ -12,12 +12,10 @@ const tours = [
       "Lunch",
       "Cycling around Gili Trawangan"
     ],
-    "cover": "images/cover/gili-snorkeling-tour.png",
-    "detail_img": "images/cover-detail/cover-detail-gili-snorkeling-tour.png",
+    "cover": "images/cover/gili-snorkeling-tour.jpg",
+    "detail_img": "images/cover-detail/gili-snorkeling-tour.jpg",
     "images": [
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg"
+      
     ]
   },
 
@@ -33,12 +31,10 @@ const tours = [
       "Kecak dance ticket",
       "Seafood dinner at Jimbaran"
     ],
-    "cover": "images/cover/uluwatu-sunset-kecak-dinner.png",
-    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/uluwatu-sunset-kecak-dinner.jpg",
+    "detail_img": "images/cover-detail/uluwatu-sunset-kecak-dinner.jpg",
     "images": [
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg"
+      
     ]
   },
 
@@ -61,12 +57,10 @@ const tours = [
       "Snorkeling equipment",
       "Snorkeling boat"
     ],
-    "cover": "images/cover/blue-lagoon-east-bali-tour.png",
-    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/blue-lagoon-east-bali-tour.jpg",
+    "detail_img": "images/cover-detail/blue-lagoon-east-bali-tour.jpg",
     "images": [
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg"
+      
     ]
   },
   {
@@ -87,12 +81,10 @@ const tours = [
       "Entrance tickets",
       "Lunch"
     ],
-    "cover": "images/cover/east-bali-tour.png",
-    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/east-bali-tour.jpg",
+    "detail_img": "images/cover-detail/east-bali-tour.jpg",
     "images": [
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg"
+      
     ]
   },
   {
@@ -115,12 +107,10 @@ const tours = [
       "Snorkeling boat",
       "Lunch"
     ],
-    "cover": "images/cover/east-bali-besakih-blue-lagoon.png",
-    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/east-bali-besakih-blue-lagoon.jpg",
+    "detail_img": "images/cover-detail/east-bali-besakih-blue-lagoon.jpg",
     "images": [
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg"
+      
     ]
   },
   {
@@ -137,12 +127,10 @@ const tours = [
       "Dinner",
       "Insurance"
     ],
-    "cover": "images/cover/rafting-atv-ubud.png",
-    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/rafting-atv-ubud.jpg",
+    "detail_img": "images/cover-detail/rafting-atv-ubud.jpg",
     "images": [
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg"
+      
     ]
   },
   {
@@ -165,12 +153,10 @@ const tours = [
       "Entrance tickets",
       "Lunch"
     ],
-    "cover": "images/cover/ubud-tour.png",
-    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/ubud-tour.jpg",
+    "detail_img": "images/cover-detail/ubud-tour.jpg",
     "images": [
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg"
+      
     ]
   },
   {
@@ -191,12 +177,10 @@ const tours = [
       "Kintamani Volcano View",
       "Tegalalang Rice Terrace"
     ],
-    "cover": "images/cover/ubud-kintamani-tour.png",
-    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/ubud-kintamani-tour.jpg",
+    "detail_img": "images/cover-detail/ubud-kintamani-tour.jpg",
     "images": [
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg"
+      
     ]
   },
   {
@@ -219,12 +203,10 @@ const tours = [
       "Kintamani Volcano View",
       "Besakih Mother Temple"
     ],
-    "cover": "images/cover/kintamani-besakih-tour.png",
-    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/kintamani-besakih-tour.jpg",
+    "detail_img": "images/cover-detail/kintamani-besakih-tour.jpg",
     "images": [
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg"
+      
     ]
   },
   {
@@ -247,12 +229,10 @@ const tours = [
       "Chocolate Factory",
       "Taman Ayun Temple"
     ],
-    "cover": "images/cover/west-north-bali-tour.png",
-    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/west-north-bali-tour.jpg",
+    "detail_img": "images/cover-detail/west-north-bali-tour.jpg",
     "images": [
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg"
+      
     ]
   },
   {
@@ -275,12 +255,10 @@ const tours = [
       "Lunch at Lovina Beach",
       "Gitgit Waterfall"
     ],
-    "cover": "images/cover/north-bali-tour.png",
-    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/north-bali-tour.jpg",
+    "detail_img": "images/cover-detail/north-bali-tour.jpg",
     "images": [
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg"
+      
     ]
   },
   {
@@ -295,12 +273,10 @@ const tours = [
       "Fishing equipment",
       "Lunch"
     ],
-    "cover": "images/cover/trolling-fishing.png",
-    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/trolling-fishing.jpg",
+    "detail_img": "images/cover-detail/trolling-fishing.jpg",
     "images": [
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg"
+      
     ]
   },
   {
@@ -315,13 +291,30 @@ const tours = [
       "GWK & Uluwatu tickets",
       "Seafood dinner"
     ],
-    "cover": "images/cover/south-bali-tour.png",
-    "detail_img": "images/Halfday-Ubud-Morning-Tour-landscape.jpg",
+    "cover": "images/cover/south-bali-tour.jpg",
+    "detail_img": "images/cover-detail/south-bali-tour.jpg",
     "images": [
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg",
-      "images/Halfday-Ubud-Morning-Tour.jpg"
+      
     ]
-  }
+  },
+  {
+  "title": "Rainforest Trekking & Canoe Adventure",
+  "slug": "rainforest-canoe-tour",
+  "price_per_person": 1600000,
+  "duration": "6–7 hours",
+  "start_time": "08:00 AM",
+  "included": [
+    "Private air-conditioned transport",
+    "Professional trekking guide",
+    "Canoe experience",
+    "Mineral water",
+    "Lunch"
+  ],
+  "cover": "images/cover/rainforest-canoe-tour.jpg",
+  "detail_img": "images/cover-detail/rainforest-canoe-tour.jpg",
+  "images": [
+    
+  ]
+}
   
 ]
