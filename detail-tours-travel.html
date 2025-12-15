@@ -6,32 +6,30 @@
   <meta charset="utf-8">
   <meta name="color-scheme" content="light">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="title" content="Angel Tours & Travel - Bali - Indonesia">
+  <meta name="description" content="Explore your dream destination and make unforgettable memories with us">
 
-  <!-- Primary Meta Tags -->
-<title>Angel Tours & Travel - Bali - Indonesia</title>
-<meta name="title" content="Angel Tours & Travel - Bali - Indonesia">
-<meta name="description" content="Explore your dream destination and make unforgettable memories with us">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://angeltourstravel.com/">
+  <meta property="og:title" content="Angel Tours & Travel - Bali - Indonesia">
+  <meta property="og:description" content="Explore your dream destination and make unforgettable memories with us">
+  <meta property="og:image" content="https://angeltourstravel.com/images/logo/meta.jpg">
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://angeltourstravel.com/">
-<meta property="og:title" content="Angel Tours & Travel - Bali - Indonesia">
-<meta property="og:description" content="Explore your dream destination and make unforgettable memories with us">
-<meta property="og:image" content="https://angeltourstravel.com/images/logo/meta.jpg">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://angeltourstravel.com/">
+  <meta property="twitter:title" content="Angel Tours & Travel - Bali - Indonesia">
+  <meta property="twitter:description" content="Explore your dream destination and make unforgettable memories with us">
+  <meta property="twitter:image" content="https://angeltourstravel.com/images/logo/meta.jpg">
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://angeltourstravel.com/">
-<meta property="twitter:title" content="Angel Tours & Travel - Bali - Indonesia">
-<meta property="twitter:description" content="Explore your dream destination and make unforgettable memories with us">
-<meta property="twitter:image" content="https://angeltourstravel.com/images/logo/meta.jpg">
+  <!-- SEO Additional -->
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Angel Tours & Travel">
+  <meta name="keywords" content="Bali Tour, Bali Travel, Indonesia Tour, Travel Agency Bali, Angel Tours">
 
-<!-- SEO Additional -->
-<meta name="robots" content="index, follow">
-<meta name="author" content="Angel Tours & Travel">
-<meta name="keywords" content="Bali Tour, Bali Travel, Indonesia Tour, Travel Agency Bali, Angel Tours">
-
-<!-- Canonical -->
+  <!-- Canonical -->
+  <link rel="canonical" href="https://angeltourstravel.com/">
 
 
   <link rel="icon" type="image/x-icon" href="images/logo/logo.png" />
@@ -60,8 +58,9 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-white ftco-navbar-light" id="ftco-navbar">
     <div class="container">
+
       <a class="navbar-brand d-flex align-items-center text-primary" href="index.html" style="gap: 10px;">
-        <img src="images/logo/logo.png" width="50" class="img-fluid" alt="Logo">
+        <img src="images/logo/logo.png" width="40" class="img-fluid" alt="Logo">
 
         <div class="brand-text" style="line-height: 1;">
           <strong>Angel</strong><br>
@@ -269,61 +268,61 @@
     }
 
     // ================= HELPER =================
-const renderRow = (label, content) => {
-  if (
-    content === null ||
-    content === undefined ||
-    content === "" ||
-    content === "Not specified" ||
-    content === "Coming soon"
-  ) {
-    return "";
-  }
+    const renderRow = (label, content) => {
+      if (
+        content === null ||
+        content === undefined ||
+        content === "" ||
+        content === "Not specified" ||
+        content === "Coming soon"
+      ) {
+        return "";
+      }
 
-  return `
+      return `
     <tr>
       <th><strong>${label}</strong></th>
       <td>${content}</td>
     </tr>
   `;
-};
+    };
 
-// ================= DATA PROCESSING =================
+    // ================= DATA PROCESSING =================
 
-// Format harga
-const price = tour.price_per_person
-  ? `IDR ${tour.price_per_person.toLocaleString()} / person`
-  : "";
+    // Format harga
+    const price = tour.price_per_person
+      ? `IDR ${tour.price_per_person.toLocaleString()} / person`
+      : "";
 
-// Included list
-const includedList = tour.included?.length
-  ? `<ul class="mb-0">
+    // Included list
+    const includedList = tour.included?.length
+      ? `<ul class="mb-0">
       ${tour.included.map(i => `<li>${i}</li>`).join("")}
      </ul>`
-  : "";
+      : "";
 
-// Destination / Itinerary list
-const destinationList = tour.itinerary?.length
-  ? `<ul class="mb-0">
+    // Destination / Itinerary list
+    const destinationList = tour.itinerary?.length
+      ? `<ul class="mb-0">
       ${tour.itinerary.map(i => `<li>${i}</li>`).join("")}
      </ul>`
-  : "";
+      : "";
 
-// Main image
-const mainImage = tour.detail_img || "";
+    // Main image
+    const mainImage = tour.detail_img || "";
 
-// Detail images
-const detailImages = tour.images?.length
-  ? tour.images
-      .map(
-        img =>
-          `<img src="${img}" class="img-fluid rounded border m-1" width="200">`
-      )
-      .join("")
-  : "";
+    // Detail images
+    const detailImages = tour.images?.length
+      ? tour.images
+        .map(
+          img =>
+            `<img src="${img}" class="img-fluid rounded border m-1" width="200">`
+        )
+        .join("")
+      : "";
 
-// ================= RENDER HTML =================
-document.getElementById("detail-container").innerHTML = `
+    // ================= RENDER HTML =================
+    document.getElementById("detail-container").innerHTML = `
 
 <div class="row justify-content-center pb-4 mt-5">
   <div class="col-md-12 heading-section text-center">
@@ -360,8 +359,8 @@ document.getElementById("detail-container").innerHTML = `
 
     <div class="mt-5 mb-5 text-center">
       <a href="https://wa.me/6281337204005?text=Hello%20Angel%20Tours%20%26%20Travel,%20I%20would%20like%20to%20book%20the%20${encodeURIComponent(
-        tour.title ?? ""
-      )}%20package."
+      tour.title ?? ""
+    )}%20package."
         class="btn btn-primary btn-lg">
         Booking Now
       </a>
@@ -371,7 +370,7 @@ document.getElementById("detail-container").innerHTML = `
 </div>
 `;
 
-    
+
   </script>
 
 </body>
