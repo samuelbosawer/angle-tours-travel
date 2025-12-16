@@ -236,11 +236,11 @@
 
 
 
-  <script>
-    const container = document.getElementById("tour-list");
+ <script>
+		const container = document.getElementById("tour-list");
 
-    tours.forEach(tour => {
-      const html = `
+		tours.forEach(tour => {
+			const html = `
       <div class="col-md-4   mb-4">
         <div class="project-wrap">
           <a class="img" style="background-image: url('${tour.cover}')">
@@ -248,18 +248,11 @@
           </a>
 
           <div class="text p-4">
-            <span class="days">${tour.duration || "Tour Package"}</span>
+            <span class="days"> Tour Package </span>
 
             <h3><a href="detail/${tour.slug}.html">${tour.title}</a></h3>
-
-            <p class="location">
-            
-            </p>
-
             <ul>
-              <li><span class="flaticon-route"></span> ${tour.duration}</li>
-              <li><span class="flaticon-tour-guide"></span> Private Guide</li>
-              <li><span class="flaticon-map"></span> Multiple Destinations</li>
+              <li> ${tour.duration || ""}</li>
             </ul>
 
             <div class="mt-3 d-flex justify-content-between">
@@ -273,9 +266,10 @@
       </div>
     `;
 
-      container.innerHTML += html;
-    });
-  </script>
+			container.innerHTML += html;
+		});
+	</script>
+
 
 
 
